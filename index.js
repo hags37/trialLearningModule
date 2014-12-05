@@ -16,20 +16,7 @@ app.use(express.static(__dirname + '/client'));
 // return route config function
 module.exports = function (app, passport, express) {
 
-	var router = express.Router();
-
-	router.use(
-		'/learningMethod' 
-		function (req, res) {
-			res.sendFile(
-				path.resolve(
-					__dirname,
-					'client/trial.html'
-					
-				)
-			);
-		}
-	);
+	var router = "Trial Router";
 
 
 	return router;
